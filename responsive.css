@@ -1,0 +1,172 @@
+/* Responsive Code */
+@media (max-width: 1024px) {
+  .page__header {
+    margin: 20px 20px 100px 20px;
+  }
+
+  .page__main {
+    margin: 0px 20px 20px 20px;
+  }
+
+  .text-area__wrapper {
+    flex-basis: 80%;
+  }
+
+  .tiles {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .tile {
+    flex-basis: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .page__header {
+    margin: 15px 15px 80px 15px;
+  }
+
+  .page__main {
+    margin: 0px 15px 15px 15px;
+  }
+  /* Responsive Styles for Navbar */
+@media (max-width: 668px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo {
+    margin-bottom: 10px;
+}
+
+.nav__link-section {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav__name {
+    font-size: 20px;
+}
+
+.nav__login {
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+}
+}
+
+
+  .keyboard {
+    row-gap: 4px;
+  }
+
+  .keyboard__row {
+    column-gap: 4px;
+  }
+
+  .key {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .key_space {
+    width: 200px;
+  }
+
+  .text-area__wrapper {
+    flex-basis: 90%;
+  }
+
+  .tile {
+    flex-basis: 100%;
+    height: 50px;
+    padding: 20px 15px 20px 15px;
+  }
+
+  .tile__value {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page__header {
+    margin: 10px 10px 60px 10px;
+  }
+
+  .page__main {
+    margin: 0px 10px 10px 10px;
+  }
+  .key {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .key_space {
+    width: 150px;
+  }
+
+  .text-area__wrapper {
+    flex-basis: 95%;
+  }
+
+  .tile {
+    height: 40px;
+    padding: 15px 10px 15px 10px;
+  }
+
+  .tile__heading {
+    font-size: 14px;
+  }
+
+  .tile__value {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+/* Add styles for correct and incorrect letters */
+.correct {
+  color: green; /* Highlight correct letters in green */
+}
+
+.incorrect {
+  color: red; /* Highlight incorrect letters in red */
+  text-decoration: underline; /* Underline incorrect letters */
+}
+
+/* Ensure the input field is hidden but functional */
+.text-area__input {
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
+}
+
+/* Add a blinking cursor effect */
+.letter__cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.5rem;
+  background-color: #000;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
